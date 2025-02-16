@@ -1,0 +1,92 @@
+.appointments-container {
+    padding: 2rem;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  .appointments-container h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #1E90FF; /* Primary blue */
+    margin-bottom: 1.5rem;
+  }
+  
+  .appointments-table {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow-x: auto;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #eee;
+  }
+  
+  th {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  td {
+    color: #555;
+  }
+  
+  .status-badge {
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+  }
+  
+  .status-badge.confirmed {
+    background-color: #d4edda;
+    color: #155724;
+  }
+  
+  .status-badge.pending {
+    background-color: #fff3cd;
+    color: #856404;
+  }
+  
+  .action-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
+    margin-right: 0.5rem;
+  }
+  
+  .action-button.reschedule {
+    background-color: #1E90FF; /* Primary blue */
+    color: white;
+  }
+  
+  .action-button.cancel {
+    background-color: #ff4444;
+    color: white;
+  }
+  
+  .action-button:hover {
+    opacity: 0.8;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .appointments-table {
+      padding: 1rem;
+    }
+  
+    th, td {
+      padding: 0.75rem;
+    }
+  }
